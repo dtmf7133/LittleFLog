@@ -1,0 +1,9 @@
+<?PHP
+
+  define('DEBUG', true);
+
+  define('APP_PAGETITLE', "LittleFLog");
+  define('APP_PAGEDESC', "A little free log.");
+  define('APP_PAGEKEYWORDS', "LittleFLog,free,log,NuMode");
+
+  define('APP_DATA_PATH', "/pathto/LittleFLog/Private/data");
