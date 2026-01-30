@@ -5,6 +5,7 @@
   $aPaths = glob(APP_DATA_PATH . DIRECTORY_SEPARATOR . "*");
   rsort($aPaths);
   $what = strip_tags(filter_input(INPUT_GET, "what")??"");
+  $what = trim($what, "./");
   if (empty($what)) {
     if (!empty($aPaths)) {
       $what = basename($aPaths[0]);
