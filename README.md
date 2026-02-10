@@ -16,7 +16,7 @@ First step, go in the config file and set all the necessary values:<br>
 <li>Set APP_PAGEKEYWORDS.</li>
 </ol> 
 
-You can access the single log page by http://yourservername.xyz/?what=&gt;page&lt;.<br>
+You can access the single log page by http://yourservername.xyz/?what=%page%.<br>
 
 For any need of software additions, plugins and improvements please write to <a href="mailto:info@numode.eu">info@numode.eu</a>  
 
