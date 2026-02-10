@@ -110,17 +110,17 @@
 </head>
 <body>
 
-<div id="langhideit">
+ <div id="langhideen">
+   <br>
+   &nbsp;We have detected that you maybe speak English, do you want to be redirected to the english site? <button onclick="$('#langhideen').hide();">NO</button>&nbsp;<button onclick="window.open('https://littleflog.numode-foss.eu','_self');">OK</button>
+   <br><br>
+ </div>
+
+ <div id="langhideit">
    <br>
    &nbsp;We have detected that you maybe speak Italian, do you want to be redirected to the italian site? <button onclick="$('#langhideit').hide();">NO</button>&nbsp;<button onclick="window.open('https://littleflog.numode-foss.eu/it','_self');">OK</button>
    <br><br>
-</div>
-
-<div id="langhidecn">
-   <br>
-   &nbsp;We have detected that you maybe speak Chinese, do you want to be redirected to the chinese site? <button onclick="$('#langhidecn').hide();">NO</button>&nbsp;<button onclick="window.open('https://littleflog.numode-foss.eu/cn','_self');">OK</button>
-   <br><br>
-</div>
+ </div>
 
 <div id="HCsplash" style="padding-top: 160px; text-align:center;color:#ffffff;display:none;">
    <div id="myh1"><H1>LittleFLog</H1></div><br>
@@ -157,25 +157,25 @@
         <span aria-hidden="true">&times;</span>
      </button>
 	
-	   Hello and welcome to LittleFLog!<br><br>
-	   
-	   LittleFLog is a light, simple, software on premise to build and own little free log.<br><br>
-	   
-	   LittleFLog is released under GPLv3 license, it is supplied AS-IS and we do not take any responsibility for its misusage.<br><br>
-	   
-           First step, go in the config file and set all the necessary values:<br>
-	    
-           <ol>
-           <li>Check the write permissions of your "data" folder in your web app Private path; and set its path in the config file.</li>
-           <li>Set APP_DATA_PATH.</li>
-           <li>Set APP_PAGETITLE.</li>
-           <li>Set APP_PAGEDESC.</li>
-           <li>Set APP_PAGEKEYWORDS.</li>
-           </ol>          
+您好，欢迎来到 LittleFLog！<br><br>
 
-	   <br>	
-		
-          You can access the single log page by http://yourservername.xyz/?what=&lt;page&gt;.<br>
+ LittleFLog 是一款轻量、简单的软件，用于构建和拥有小型免费日志。<br><br>
+
+ LittleFLog 根据 GPLv3 许可证发布，按原样提供，我们对其误用不承担任何责任。<br><br>
+
+ 第一步，进入配置文件并设置所有必要的值：<br>
+
+ <ol>
+ <li>检查网络应用 Private 路径中“data”文件夹的写入权限；并在配置文件中设置其路径。</li>
+ <li>设置 APP_DATA_PATH。</li>
+ <li>设置 APP_PAGETITLE。</li>
+ <li>设置 APP_PAGEDESC。</li>
+ <li>设置 APP_PAGEKEYWORDS。</li>
+ </ol>
+
+ <br>
+
+ 您可以通过 http://yourservername.xyz/?what=&lt;page&gt;.<br> 访问
 
           <br>
 
@@ -248,11 +248,11 @@ window.addEventListener("load", function() {
       return ret;
     }
 
-    function isChinese() {
+    function isEnglish() {
       ret = false;
       lang = window.navigator.language;
       lang = lang.toLowerCase();
-      if (lang === "cn" || lang === "zh-cn" || lang === "chinese" || lang === "chinese simplified" || lang === "mandarin") {
+      if (lang === "en" || lang === "en-us" || lang === "en-gb" || lang === "english") {
         ret = true;
       }
       return ret;
@@ -262,8 +262,8 @@ window.addEventListener("load", function() {
       $("#langhideit").show();
     }
 
-    if (isChinese()) {
-      $("#langhidecn").show();
+    if (isEnglish()) {
+      $("#langhideen").show();
     }
 </script>
 

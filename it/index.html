@@ -110,9 +110,9 @@
 </head>
 <body>
 
-<div id="langhideit">
+<div id="langhideen">
    <br>
-   &nbsp;We have detected that you maybe speak Italian, do you want to be redirected to the italian site? <button onclick="$('#langhideit').hide();">NO</button>&nbsp;<button onclick="window.open('https://littleflog.numode-foss.eu/it','_self');">OK</button>
+   &nbsp;We have detected that you maybe speak English, do you want to be redirected to the english site? <button onclick="$('#langhideen').hide();">NO</button>&nbsp;<button onclick="window.open('https://littleflog.numode-foss.eu','_self');">OK</button>
    <br><br>
 </div>
 
@@ -157,25 +157,25 @@
         <span aria-hidden="true">&times;</span>
      </button>
 	
-	   Hello and welcome to LittleFLog!<br><br>
-	   
-	   LittleFLog is a light, simple, software on premise to build and own little free log.<br><br>
-	   
-	   LittleFLog is released under GPLv3 license, it is supplied AS-IS and we do not take any responsibility for its misusage.<br><br>
-	   
-           First step, go in the config file and set all the necessary values:<br>
-	    
-           <ol>
-           <li>Check the write permissions of your "data" folder in your web app Private path; and set its path in the config file.</li>
-           <li>Set APP_DATA_PATH.</li>
-           <li>Set APP_PAGETITLE.</li>
-           <li>Set APP_PAGEDESC.</li>
-           <li>Set APP_PAGEKEYWORDS.</li>
-           </ol>          
+Ciao e benvenuto su LittleFLog!<br><br> 
 
-	   <br>	
-		
-          You can access the single log page by http://yourservername.xyz/?what=&lt;page&gt;.<br>
+LittleFLog è un software on-premise leggero e semplice per creare e possedere piccoli log gratuiti.<br><br> 
+
+LittleFLog è rilasciato sotto licenza GPLv3, viene fornito AS-IS e non ci assumiamo alcuna responsabilità per il suo utilizzo improprio.<br><br> 
+
+Primo passo, vai nel file di configurazione e imposta tutti i valori necessari:<br> 
+
+<ol> 
+<li>Verifica i permessi di scrittura della tua cartella "dati" nel percorso privato della tua web app; e imposta il suo percorso nel file di configurazione.</li> 
+<li>Imposta APP_DATA_PATH.</li> 
+<li>Imposta APP_PAGETITLE.</li> 
+<li>Imposta APP_PAGEDESC.</li> 
+<li>Imposta APP_PAGEKEYWORDS.</li> 
+</ol> 
+
+<br> 
+
+È possibile accedere alla singola pagina di registro da http://yourservername.xyz/?what=&lt;page&gt;.<br>
 
           <br>
 
@@ -237,12 +237,12 @@ window.addEventListener("load", function() {
 </script>  
 
 <script>
-    function isItalian() {
+    function isEnglish() {
       ret = false;
       lang = window.navigator.language;
       lang = lang.toLowerCase();
       //alert(lang);
-      if (lang === "it" || lang === "it-it" || lang === "italian") {
+      if (lang === "en" || lang === "en-us" || lang === "en-gb" || lang === "english") {
         ret = true;
       }
       return ret;
@@ -258,8 +258,8 @@ window.addEventListener("load", function() {
       return ret;
     }
 
-    if (isItalian()) {
-      $("#langhideit").show();
+    if (isEnglish()) {
+      $("#langhideen").show();
     }
 
     if (isChinese()) {
