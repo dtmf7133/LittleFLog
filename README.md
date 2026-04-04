@@ -20,11 +20,11 @@ You can access the single log page by http://yoursitename.xyz/?what=%page%.<br>
 
 For any need of software additions, plugins and improvements please write to <a href="mailto:info@numode.eu">info@numode.eu</a>  
 
-To help please donate by clicking <a href="https://gaox.io/l/dona1">https://gaox.io/l/dona1</a> and filling the form.  
+To help please donate by clicking <a href="https://gaox.eu/l/dona1">https://gaox.eu/l/dona1</a> and filling the form.  
 
 
 ### Screenshot:
 
 ![LittleFLog in action](/Public/res/screenshot1.png)<br>
 
-Feedback: <a href="mailto:code@gaox.io" style="color:#e6d236;">code@gaox.io</a>
+Feedback: <a href="mailto:code@gaox.eu" style="color:#e6d236;">code@gaox.eu</a>
